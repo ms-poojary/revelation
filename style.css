@@ -78,12 +78,28 @@ body {
     transition: 0.5s;
 }
 .container .slide1 .icon{
-    display: flex;
+    /* display: flex; */
+    position: relative;
    border-radius: 8px;
 justify-content: center;
     align-items: center;
 }
+.container .icon h1{
+  position: absolute;
+  top: 40%;
+  left: 22%;
+  text-shadow: 2px 2px 6px black;
+  z-index: 55;
+}
 
+.icon img{
+width: 300px;
+height: 200px;
+  object-fit: cover;
+  z-index: 3;
+  border-radius: 8px;
+  opacity: 0.8;
+}
 .container .card .slide.slide1 {
     position: relative;
     display: flex;
